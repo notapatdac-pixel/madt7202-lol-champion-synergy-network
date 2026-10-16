@@ -1,0 +1,39 @@
+{
+ "runs": [
+  {
+   "start_utc": "2026-10-15T16:14:20+00:00",
+   "end_utc": "2026-10-15T18:00:38+00:00",
+   "calls": {
+    "league": 3,
+    "match_ids": 280,
+    "match": 5035
+   },
+   "rate_limit_headers": {
+    "X-App-Rate-Limit": "100:120,20:1",
+    "X-Method-Rate-Limit (league)": "500:600,30:10",
+    "X-Method-Rate-Limit (match_ids)": "2000:10",
+    "X-Method-Rate-Limit (match)": "2000:10"
+   },
+   "target": 5000,
+   "workers": 3
+  }
+ ],
+ "players_per_tier": {
+  "CHALLENGER": 300,
+  "GRANDMASTER": 700,
+  "MASTER": 10000
+ },
+ "players_sampled_per_tier": {
+  "CHALLENGER": 94,
+  "GRANDMASTER": 93,
+  "MASTER": 93
+ },
+ "platform": "kr",
+ "region": "asia",
+ "queue": 420,
+ "patch_prefix": "16.20",
+ "patch_start_utc": "2026-10-07T00:00:00+00:00",
+ "match_ids": 5755,
+ "kept_matches": 5000,
+ "cached_matches": 5035
+}

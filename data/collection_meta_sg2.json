@@ -1,0 +1,70 @@
+{
+ "players_per_tier": {
+  "CHALLENGER": 300,
+  "GRANDMASTER": 699,
+  "MASTER": 2456
+ },
+ "players_sampled_note": "run 1 sampled at least 325 players round-robin across the three tiers (last progress line: players 325, match ids 3878; it stopped at 4029 ids); the exact count was lost when run 1 stopped on a read timeout. players_sampled_per_tier is reconstructed from the fixed round-robin order (first 325 players); a later run resumes after them, so at most ~24 players can be queried twice (duplicate match ids are removed)",
+ "players_sampled_min": 325,
+ "runs": [
+  {
+   "start_utc": "2026-10-15T15:18:30+00:00",
+   "end_utc": "2026-10-15T15:33:08+00:00",
+   "stopped": "read timeout (not retried in that version)",
+   "calls_lower_bound": {
+    "league": 3,
+    "match_ids": 325,
+    "match": 382
+   },
+   "rate_limit_headers": {
+    "X-App-Rate-Limit": "100:120,20:1",
+    "X-Method-Rate-Limit (league)": "500:600,30:10",
+    "X-Method-Rate-Limit (match_ids)": "2000:10",
+    "X-Method-Rate-Limit (match)": "2000:10"
+   }
+  },
+  {
+   "start_utc": "2026-10-15T15:34:20+00:00",
+   "end_utc": "2026-10-15T16:38:34+00:00",
+   "calls": {
+    "match": 3191
+   },
+   "rate_limit_headers": {
+    "X-App-Rate-Limit": "100:120,20:1",
+    "X-Method-Rate-Limit (match)": "2000:10"
+   }
+  },
+  {
+   "start_utc": "2026-10-15T16:38:56+00:00",
+   "end_utc": "2026-10-15T17:47:03+00:00",
+   "calls": {
+    "league": 3,
+    "match_ids": 824,
+    "429": 1,
+    "match": 2551
+   },
+   "rate_limit_headers": {
+    "X-App-Rate-Limit": "100:120,20:1",
+    "X-Method-Rate-Limit (league)": "500:600,30:10",
+    "X-Method-Rate-Limit (match_ids)": "2000:10",
+    "X-Method-Rate-Limit (match)": "2000:10"
+   },
+   "target": 6000,
+   "workers": 3
+  }
+ ],
+ "probe_calls_note": "fewer than 20 calls before run 1 to check the key, the SG2/sea routing and the rate-limit headers",
+ "platform": "sg2",
+ "region": "sea",
+ "queue": 420,
+ "patch_prefix": "16.20",
+ "patch_start_utc": "2026-10-07T00:00:00+00:00",
+ "match_ids": 6901,
+ "kept_matches": 6000,
+ "cached_matches": 6120,
+ "players_sampled_per_tier": {
+  "CHALLENGER": 300,
+  "GRANDMASTER": 424,
+  "MASTER": 424
+ }
+}

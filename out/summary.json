@@ -1,0 +1,650 @@
+{
+ "collection": {
+  "kr": {
+   "players_per_tier": {
+    "CHALLENGER": 300,
+    "GRANDMASTER": 700,
+    "MASTER": 10000
+   },
+   "players_sampled_per_tier": {
+    "CHALLENGER": 94,
+    "GRANDMASTER": 93,
+    "MASTER": 93
+   },
+   "platform": "kr",
+   "region": "asia",
+   "queue": 420,
+   "patch_prefix": "16.20",
+   "patch_start_utc": "2026-10-07T00:00:00+00:00",
+   "match_ids": 5755,
+   "kept_matches": 5000,
+   "cached_matches": 5035
+  },
+  "pro": {
+   "source": "https://lol.fandom.com/api.php",
+   "licence": "CC BY-SA 3.0 (Leaguepedia)",
+   "patch": "26.20",
+   "rows": 1820,
+   "games": 182,
+   "tournaments": {
+    "LCK Academy Series/2026 Season/2nd Championship": 470,
+    "LCP Wildcard/2026 Season/Playoffs": 290,
+    "M\u00e4ngude\u00d6\u00d6 2026": 290,
+    "EMEA Masters/2026 Season/Summer Main Event": 210,
+    "Arabian League 2nd Division/2026 Season/Summer Split": 120,
+    "Prime League 2nd Division/2027 Season/Fall Split": 110,
+    "TCL/2027 Season/Promotion": 110,
+    "LoL Game Changers/2026 Season/Playoffs": 90,
+    "Hitpoint 2nd Division Challengers/2026 Season/Summer Playoffs": 60,
+    "LigaGG/CELOL S\u00e9rie A/2026 Season/Split 2": 40,
+    "VCS/2026 Season/Finals Stage 2": 30
+   },
+   "collected_utc": "2026-10-15T17:01:38+00:00",
+   "calls": 4
+  },
+  "sg2": {
+   "players_per_tier": {
+    "CHALLENGER": 300,
+    "GRANDMASTER": 699,
+    "MASTER": 2456
+   },
+   "players_sampled_note": "run 1 sampled at least 325 players round-robin across the three tiers (last progress line: players 325, match ids 3878; it stopped at 4029 ids); the exact count was lost when run 1 stopped on a read timeout. players_sampled_per_tier is reconstructed from the fixed round-robin order (first 325 players); a later run resumes after them, so at most ~24 players can be queried twice (duplicate match ids are removed)",
+   "players_sampled_min": 325,
+   "probe_calls_note": "fewer than 20 calls before run 1 to check the key, the SG2/sea routing and the rate-limit headers",
+   "platform": "sg2",
+   "region": "sea",
+   "queue": 420,
+   "patch_prefix": "16.20",
+   "patch_start_utc": "2026-10-07T00:00:00+00:00",
+   "match_ids": 6901,
+   "kept_matches": 6000,
+   "cached_matches": 6120,
+   "players_sampled_per_tier": {
+    "CHALLENGER": 300,
+    "GRANDMASTER": 424,
+    "MASTER": 424
+   }
+  }
+ },
+ "runs": {
+  "kr": [
+   {
+    "start_utc": "2026-10-15T16:14:20+00:00",
+    "end_utc": "2026-10-15T18:00:38+00:00",
+    "calls": {
+     "league": 3,
+     "match_ids": 280,
+     "match": 5035
+    },
+    "rate_limit_headers": {
+     "X-App-Rate-Limit": "100:120,20:1",
+     "X-Method-Rate-Limit (league)": "500:600,30:10",
+     "X-Method-Rate-Limit (match_ids)": "2000:10",
+     "X-Method-Rate-Limit (match)": "2000:10"
+    },
+    "target": 5000,
+    "workers": 3
+   }
+  ],
+  "pro": [],
+  "sg2": [
+   {
+    "start_utc": "2026-10-15T15:18:30+00:00",
+    "end_utc": "2026-10-15T15:33:08+00:00",
+    "stopped": "read timeout (not retried in that version)",
+    "calls_lower_bound": {
+     "league": 3,
+     "match_ids": 325,
+     "match": 382
+    },
+    "rate_limit_headers": {
+     "X-App-Rate-Limit": "100:120,20:1",
+     "X-Method-Rate-Limit (league)": "500:600,30:10",
+     "X-Method-Rate-Limit (match_ids)": "2000:10",
+     "X-Method-Rate-Limit (match)": "2000:10"
+    }
+   },
+   {
+    "start_utc": "2026-10-15T15:34:20+00:00",
+    "end_utc": "2026-10-15T16:38:34+00:00",
+    "calls": {
+     "match": 3191
+    },
+    "rate_limit_headers": {
+     "X-App-Rate-Limit": "100:120,20:1",
+     "X-Method-Rate-Limit (match)": "2000:10"
+    }
+   },
+   {
+    "start_utc": "2026-10-15T16:38:56+00:00",
+    "end_utc": "2026-10-15T17:47:03+00:00",
+    "calls": {
+     "league": 3,
+     "match_ids": 824,
+     "429": 1,
+     "match": 2551
+    },
+    "rate_limit_headers": {
+     "X-App-Rate-Limit": "100:120,20:1",
+     "X-Method-Rate-Limit (league)": "500:600,30:10",
+     "X-Method-Rate-Limit (match_ids)": "2000:10",
+     "X-Method-Rate-Limit (match)": "2000:10"
+    },
+    "target": 6000,
+    "workers": 3
+   }
+  ]
+ },
+ "matches": 10997,
+ "kept_in_cache": 11000,
+ "dropped_other_servers": 3,
+ "api_calls": {
+  "kr": 5318,
+  "sg2": 7280
+ },
+ "patch_versions": {
+  "16.20": 10997
+ },
+ "first_game_utc": "2026-10-06T23:32:50+00:00",
+ "last_game_utc": "2026-10-15T16:21:27+00:00",
+ "tiers": {
+  "MASTER": 4214,
+  "GRANDMASTER": 4006,
+  "CHALLENGER": 2777
+ },
+ "params": {
+  "min_games": 30,
+  "mode": "role",
+  "shrink": true
+ },
+ "prior_wr": 10,
+ "prior_pair": 20,
+ "champions": 173,
+ "champions_min_games": 173,
+ "missing_position_rows": 2,
+ "edges": {
+  "role_before": 8787,
+  "role_after": 638,
+  "all_before": 14036,
+  "all_after": 1939,
+  "role_positive": 338,
+  "all_positive": 992,
+  "positive_graph_nodes": 119,
+  "positive_graph_edges": 338
+ },
+ "top_ban_role": [
+  {
+   "pair": "Lee Sin + Twisted Fate",
+   "a": "LeeSin",
+   "b": "TwistedFate",
+   "roles": "Jg-Mid",
+   "games": 92,
+   "lift_pp": 10.039296940272456,
+   "lift_raw_pp": 12.221752796853425,
+   "expected": 0.5190868198575527,
+   "wr_pair": 0.6413043478260869,
+   "pick_rate": 0.008365917977630262,
+   "ban_value": 0.08398793475539382,
+   "copick_rank": 64,
+   "lift_rank": 16,
+   "ban_rank": 1,
+   "ci_lo": 3.2790318408269923,
+   "ci_hi": 15.57486629413503
+  },
+  {
+   "pair": "Aphelios + Thresh",
+   "a": "Aphelios",
+   "b": "Thresh",
+   "roles": "Bot-Sup",
+   "games": 246,
+   "lift_pp": 3.6718610279578456,
+   "lift_raw_pp": 3.9703863147836915,
+   "expected": 0.5212717466082607,
+   "wr_pair": 0.5609756097560976,
+   "pick_rate": 0.022369737201054833,
+   "ban_value": 0.08213856623421206,
+   "copick_rank": 3,
+   "lift_rank": 152,
+   "ban_rank": 2,
+   "ci_lo": -0.6533525039074918,
+   "ci_hi": 7.9891434236446965
+  },
+  {
+   "pair": "Caitlyn + Karma",
+   "a": "Caitlyn",
+   "b": "Karma",
+   "roles": "Bot-Sup",
+   "games": 112,
+   "lift_pp": 8.022757111067085,
+   "lift_raw_pp": 9.455392309471922,
+   "expected": 0.4947317911909951,
+   "wr_pair": 0.5892857142857143,
+   "pick_rate": 0.010184595798854232,
+   "ban_value": 0.08170853836860174,
+   "copick_rank": 41,
+   "lift_rank": 43,
+   "ban_rank": 3,
+   "ci_lo": 1.8637365542952622,
+   "ci_hi": 14.113780062143132
+  },
+  {
+   "pair": "Kai'Sa + Qiyana",
+   "a": "Kaisa",
+   "b": "Qiyana",
+   "roles": "Bot-Jg",
+   "games": 133,
+   "lift_pp": 6.477326185074868,
+   "lift_raw_pp": 7.451360197868084,
+   "expected": 0.5194713604273342,
+   "wr_pair": 0.5939849624060151,
+   "pick_rate": 0.0120942075111394,
+   "ban_value": 0.07833812699963238,
+   "copick_rank": 25,
+   "lift_rank": 71,
+   "ban_rank": 4,
+   "ci_lo": 0.6454931399855842,
+   "ci_hi": 12.205532721983017
+  },
+  {
+   "pair": "Nautilus + Tristana",
+   "a": "Nautilus",
+   "b": "Tristana",
+   "roles": "Sup-Bot",
+   "games": 120,
+   "lift_pp": 7.059050995476035,
+   "lift_raw_pp": 8.23555949472204,
+   "expected": 0.45931107171944624,
+   "wr_pair": 0.5416666666666666,
+   "pick_rate": 0.010912066927343821,
+   "ban_value": 0.07702883690616752,
+   "copick_rank": 33,
+   "lift_rank": 58,
+   "ban_rank": 5,
+   "ci_lo": 0.3274230595582085,
+   "ci_hi": 12.195811101374597
+  }
+ ],
+ "ban_list": [
+  {
+   "pair": "Lee Sin + Twisted Fate",
+   "a": "LeeSin",
+   "b": "TwistedFate",
+   "roles": "Jg-Mid",
+   "games": 92,
+   "lift_pp": 10.039296940272456,
+   "lift_raw_pp": 12.221752796853425,
+   "expected": 0.5190868198575527,
+   "wr_pair": 0.6413043478260869,
+   "pick_rate": 0.008365917977630262,
+   "ban_value": 0.08398793475539382,
+   "copick_rank": 64,
+   "lift_rank": 16,
+   "ban_rank": 1,
+   "ci_lo": 3.2790318408269923,
+   "ci_hi": 15.57486629413503,
+   "z": 2.6088355032086237,
+   "p_bonferroni": 1.0,
+   "pro_games": 0,
+   "lift_SG2": 6.460670151752383,
+   "lift_KR": 8.086167436972913,
+   "games_SG2": 22,
+   "games_KR": 70,
+   "pro_wins": 0
+  },
+  {
+   "pair": "Caitlyn + Karma",
+   "a": "Caitlyn",
+   "b": "Karma",
+   "roles": "Bot-Sup",
+   "games": 112,
+   "lift_pp": 8.022757111067085,
+   "lift_raw_pp": 9.455392309471922,
+   "expected": 0.4947317911909951,
+   "wr_pair": 0.5892857142857143,
+   "pick_rate": 0.010184595798854232,
+   "ban_value": 0.08170853836860174,
+   "copick_rank": 41,
+   "lift_rank": 43,
+   "ban_rank": 3,
+   "ci_lo": 1.8637365542952622,
+   "ci_hi": 14.113780062143132,
+   "z": 2.268237807360424,
+   "p_bonferroni": 1.0,
+   "pro_games": 12,
+   "lift_SG2": 4.364979203276749,
+   "lift_KR": 10.091055913123078,
+   "games_SG2": 62,
+   "games_KR": 50,
+   "pro_wins": 2
+  },
+  {
+   "pair": "Kai'Sa + Qiyana",
+   "a": "Kaisa",
+   "b": "Qiyana",
+   "roles": "Bot-Jg",
+   "games": 133,
+   "lift_pp": 6.477326185074868,
+   "lift_raw_pp": 7.451360197868084,
+   "expected": 0.5194713604273342,
+   "wr_pair": 0.5939849624060151,
+   "pick_rate": 0.0120942075111394,
+   "ban_value": 0.07833812699963238,
+   "copick_rank": 25,
+   "lift_rank": 71,
+   "ban_rank": 4,
+   "ci_lo": 0.6454931399855842,
+   "ci_hi": 12.205532721983017,
+   "z": 1.9254327651707703,
+   "p_bonferroni": 1.0,
+   "pro_games": 2,
+   "lift_SG2": 5.593149206813811,
+   "lift_KR": 6.087222500259966,
+   "games_SG2": 62,
+   "games_KR": 71,
+   "pro_wins": 2
+  }
+ ],
+ "servers": {
+  "SG2": 5997,
+  "KR": 5000
+ },
+ "pro": {
+  "games": 182,
+  "team_games": 364,
+  "unmatched_champions": [
+   "Renata Glasc"
+  ],
+  "kept_pairs_seen_in_pro": 239,
+  "significant_pairs_seen_in_pro": 14
+ },
+ "significant_pairs": 43,
+ "significant_and_replicated": 30,
+ "bonferroni_survivors": [],
+ "sig_hubs": [
+  {
+   "champion": "Lee Sin",
+   "edges": 7,
+   "partners": [
+    "Caitlyn",
+    "Twisted Fate",
+    "Vex",
+    "Xerath",
+    "Zaahen",
+    "Zeri",
+    "Zoe"
+   ]
+  },
+  {
+   "champion": "Kai'Sa",
+   "edges": 4,
+   "partners": [
+    "Alistar",
+    "Bard",
+    "Pantheon",
+    "Qiyana"
+   ]
+  },
+  {
+   "champion": "Jhin",
+   "edges": 4,
+   "partners": [
+    "Fiddlesticks",
+    "Jayce",
+    "Maokai",
+    "Senna"
+   ]
+  }
+ ],
+ "server_lift_cols": [
+  "lift_KR",
+  "lift_SG2"
+ ],
+ "replication_min_games": 10,
+ "significant_by_chance": 31.9,
+ "top_ban_all": [
+  {
+   "pair": "Kai'Sa + Qiyana",
+   "a": "Kaisa",
+   "b": "Qiyana",
+   "roles": "Bot-Jg",
+   "games": 157,
+   "lift_pp": 7.029941476219507,
+   "lift_raw_pp": 7.9254754222347295,
+   "expected": 0.5194713604273342,
+   "wr_pair": 0.5987261146496815,
+   "pick_rate": 0.014276620896608166,
+   "ban_value": 0.10036380938132788,
+   "copick_rank": 21,
+   "lift_rank": 130,
+   "ban_rank": 1
+  },
+  {
+   "pair": "Kai'Sa + Pantheon",
+   "a": "Kaisa",
+   "b": "Pantheon",
+   "roles": "Bot-Sup",
+   "games": 141,
+   "lift_pp": 7.7964950470581265,
+   "lift_raw_pp": 8.902380869335879,
+   "expected": 0.5492740636470668,
+   "wr_pair": 0.6382978723404256,
+   "pick_rate": 0.01282167863962899,
+   "ban_value": 0.0999641540088384,
+   "copick_rank": 38,
+   "lift_rank": 94,
+   "ban_rank": 2
+  },
+  {
+   "pair": "Qiyana + Thresh",
+   "a": "Qiyana",
+   "b": "Thresh",
+   "roles": "Jg-Sup",
+   "games": 104,
+   "lift_pp": 9.896630534370807,
+   "lift_raw_pp": 11.799828714057503,
+   "expected": 0.5358478667055788,
+   "wr_pair": 0.6538461538461539,
+   "pick_rate": 0.009457124670364645,
+   "ban_value": 0.0935936687800822,
+   "copick_rank": 108,
+   "lift_rank": 37,
+   "ban_rank": 3
+  },
+  {
+   "pair": "Ekko + Jhin",
+   "a": "Ekko",
+   "b": "Jhin",
+   "roles": "Mid-Bot",
+   "games": 107,
+   "lift_pp": 9.168010609879179,
+   "lift_raw_pp": 10.881657452847243,
+   "expected": 0.48931426659302285,
+   "wr_pair": 0.5981308411214953,
+   "pick_rate": 0.00972992634354824,
+   "ban_value": 0.08920406795099318,
+   "copick_rank": 98,
+   "lift_rank": 47,
+   "ban_rank": 4
+  },
+  {
+   "pair": "Lee Sin + Twisted Fate",
+   "a": "LeeSin",
+   "b": "TwistedFate",
+   "roles": "Jg-Mid",
+   "games": 97,
+   "lift_pp": 9.9560499776217,
+   "lift_raw_pp": 12.008843787440604,
+   "expected": 0.5190868198575527,
+   "wr_pair": 0.6391752577319587,
+   "pick_rate": 0.008820587432936256,
+   "ban_value": 0.08781820931429525,
+   "copick_rank": 135,
+   "lift_rank": 35,
+   "ban_rank": 5
+  }
+ ],
+ "role_vs_all_top3_shared": 0,
+ "role_vs_all_top5_shared": 2,
+ "all_top5_role_interacting": 3,
+ "top_copick": [
+  {
+   "pair": "Lulu + Yunara",
+   "a": "Lulu",
+   "b": "Yunara",
+   "roles": "Sup-Bot",
+   "games": 393,
+   "lift_pp": -0.36818009220504727
+  },
+  {
+   "pair": "Kai'Sa + Nautilus",
+   "a": "Kaisa",
+   "b": "Nautilus",
+   "roles": "Bot-Sup",
+   "games": 271,
+   "lift_pp": -2.7180625760440837
+  },
+  {
+   "pair": "Aphelios + Thresh",
+   "a": "Aphelios",
+   "b": "Thresh",
+   "roles": "Bot-Sup",
+   "games": 246,
+   "lift_pp": 3.6718610279578456
+  },
+  {
+   "pair": "Ezreal + Karma",
+   "a": "Ezreal",
+   "b": "Karma",
+   "roles": "Bot-Sup",
+   "games": 234,
+   "lift_pp": 1.7534690525340815
+  },
+  {
+   "pair": "Lucian + Milio",
+   "a": "Lucian",
+   "b": "Milio",
+   "roles": "Bot-Sup",
+   "games": 232,
+   "lift_pp": 1.659204078869267
+  }
+ ],
+ "top_lift": [
+  {
+   "pair": "Lee Sin + Vex",
+   "a": "LeeSin",
+   "b": "Vex",
+   "roles": "Jg-Mid",
+   "games": 37,
+   "lift_pp": 12.795213508862034
+  },
+  {
+   "pair": "Fiddlesticks + Jhin",
+   "a": "FiddleSticks",
+   "b": "Jhin",
+   "roles": "Jg-Bot",
+   "games": 31,
+   "lift_pp": 12.637196433723979
+  },
+  {
+   "pair": "Gragas + Lee Sin",
+   "a": "Gragas",
+   "b": "LeeSin",
+   "roles": "Top-Jg",
+   "games": 32,
+   "lift_pp": 12.590873799748497
+  },
+  {
+   "pair": "Jinx + Sylas",
+   "a": "Jinx",
+   "b": "Sylas",
+   "roles": "Bot-Jg",
+   "games": 49,
+   "lift_pp": 11.87236719591005
+  },
+  {
+   "pair": "Lissandra + Viego",
+   "a": "Lissandra",
+   "b": "Viego",
+   "roles": "Mid-Jg",
+   "games": 56,
+   "lift_pp": 11.843119833842314
+  }
+ ],
+ "copick_top5_in_lift_top5": 0,
+ "flip": {
+  "top3_members_wr_rank": {
+   "Lee Sin": 90,
+   "Caitlyn": 61,
+   "Kai'Sa": 53,
+   "Twisted Fate": 45,
+   "Karma": 124,
+   "Qiyana": 77
+  },
+  "top3_members_in_top10_wr": 0,
+  "pairs_of_top10_wr_kept": 0,
+  "pairs_of_top10_wr_in_top10_lift": 0
+ },
+ "most_picked": {
+  "champion": "Jhin",
+  "pick_rate": 0.2192416113485496,
+  "wr": 0.4709995886466475,
+  "in_top10_lift_pair": true,
+  "best_lift_pp": 12.637196433723979
+ },
+ "hubs": [
+  {
+   "champion": "Lee Sin",
+   "strong_partners": 41,
+   "weighted_degree_pp": 202.32937924492032,
+   "betweenness": 0.32976413257053017,
+   "pick_rate": 0.18705101391288534,
+   "role": "JUNGLE"
+  },
+  {
+   "champion": "Jhin",
+   "strong_partners": 28,
+   "weighted_degree_pp": 117.01912253617758,
+   "betweenness": 0.15409403434397387,
+   "pick_rate": 0.2192416113485496,
+   "role": "BOTTOM"
+  },
+  {
+   "champion": "Kai'Sa",
+   "strong_partners": 24,
+   "weighted_degree_pp": 94.4633933193123,
+   "betweenness": 0.11925084358310555,
+   "pick_rate": 0.20351004819496227,
+   "role": "BOTTOM"
+  },
+  {
+   "champion": "Ezreal",
+   "strong_partners": 18,
+   "weighted_degree_pp": 76.95822525204723,
+   "betweenness": 0.05544929483828507,
+   "pick_rate": 0.13867418386832772,
+   "role": "BOTTOM"
+  },
+  {
+   "champion": "Graves",
+   "strong_partners": 20,
+   "weighted_degree_pp": 76.4872764681379,
+   "betweenness": 0.07100357064909393,
+   "pick_rate": 0.08493225425115941,
+   "role": "JUNGLE"
+  }
+ ],
+ "top_betweenness": [
+  {
+   "champion": "Lee Sin",
+   "betweenness": 0.32976413257053017
+  },
+  {
+   "champion": "Jhin",
+   "betweenness": 0.15409403434397387
+  },
+  {
+   "champion": "Kai'Sa",
+   "betweenness": 0.11925084358310555
+  }
+ ]
+}

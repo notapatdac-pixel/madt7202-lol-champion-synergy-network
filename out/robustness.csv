@@ -1,0 +1,12 @@
+check,variant,pairs_kept,top3,stays,of,note
+1,min games 20,1199,Lee Sin + Twisted Fate; Aphelios + Thresh; Caitlyn + Karma,3,3,ban-list pairs in this variant's top 5 by ban value
+1,min games 30,638,Lee Sin + Twisted Fate; Aphelios + Thresh; Caitlyn + Karma,3,3,ban-list pairs in this variant's top 5 by ban value
+1,min games 50,266,Lee Sin + Twisted Fate; Aphelios + Thresh; Caitlyn + Karma,3,3,ban-list pairs in this variant's top 5 by ban value
+2,E-all (all 10 teammate pairs),1939,Kai'Sa + Qiyana; Kai'Sa + Pantheon; Qiyana + Thresh,2,3,ban-list pairs in this variant's top 5 by ban value
+3,"bootstrap 200x, 90% CI of lift",638,"Lee Sin + Twisted Fate [+3.3, +15.6]; Caitlyn + Karma [+1.9, +14.1]; Kai'Sa + Qiyana [+0.6, +12.2]",43,638,pairs with the whole CI above 0; 31.9 expected by chance
+4,KR server matches (5000),6124,Lee Sin + Twisted Fate +8.1 pp (n=70); Caitlyn + Karma +10.1 pp (n=50); Kai'Sa + Qiyana +6.1 pp (n=71),3,3,ban-list pairs with positive lift in this half
+4,SG2 server matches (5997),7793,Lee Sin + Twisted Fate +6.5 pp (n=22); Caitlyn + Karma +4.4 pp (n=62); Kai'Sa + Qiyana +5.6 pp (n=62),3,3,ban-list pairs with positive lift in this half
+4,Challenger+GM-sourced matches (6783),7650,Lee Sin + Twisted Fate +4.3 pp (n=50); Caitlyn + Karma +8.9 pp (n=71); Kai'Sa + Qiyana +5.8 pp (n=82),3,3,ban-list pairs with positive lift in this half
+4,Master-sourced matches (4214),6961,Lee Sin + Twisted Fate +13.9 pp (n=42); Caitlyn + Karma +4.1 pp (n=41); Kai'Sa + Qiyana +5.4 pp (n=51),3,3,ban-list pairs with positive lift in this half
+5,"shrinkage off (raw win rates, no pair prior)",638,Lee Sin + Twisted Fate; Caitlyn + Karma; Nautilus + Tristana,3,3,ban-list pairs in this variant's top 5 by ban value
+6,"permutation null: winners re-drawn at random, 20 rounds",638,"observed 43 / 30 / 7 (CI>0 / +replicated / Lee Sin edges); null mean 36.0 / 23.5 / 4.0, null max 46 / 32 / 6",1,3,observed counts above every null round
